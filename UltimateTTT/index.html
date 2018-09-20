@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>UltimateTTT</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="scoreBoard">
+        <div class="score" style="color: coral">X Score:
+            <div id="xPoints" class="points">0</div>
+        </div>
+        <div class="score" style="color: cornflowerblue">O Score:
+            <div id="oPoints" class="points">0</div>
+        </div>
+    </div>
+    <div class="player">
+        <h1>Current Player:</h1>
+        <div id="currentPlayer" class="currentPlayer">X</div>
+    </div>
+    <div class="resetGame" onclick="resetGame()"><h1>Reset Game</h1></div>
+    <div class="bigGrid">
+        <div class="rowSpacer" />
+        <div class="row">
+            <div id="t1" class="miniGrid">
+                <div class="row">
+                    <div id="t11" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t12" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t13" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t14" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t15" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t16" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t17" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t18" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t19" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+            </div>
+            <div id="t2" class="miniGrid verticalBorder">
+                <div class="row">
+                    <div id="t21" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t22" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t23" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t24" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t25" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t26" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t27" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t28" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t29" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+            </div>
+            <div id="t3" class="miniGrid">
+                <div class="row">
+                    <div id="t31" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t32" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t33" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t34" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t35" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t36" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t37" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t38" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t39" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="rowSpacer"/>
+        <div class="row">
+            <div id="t4" class="miniGrid horizontalBorder">
+                <div class="row">
+                    <div id="t41" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t42" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t43" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t44" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t45" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t46" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t47" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t48" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t49" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+            </div>
+            <div id="t5" class="miniGrid centerBorder">
+                <div class="row">
+                    <div id="t51" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t52" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t53" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t54" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t55" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t56" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t57" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t58" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t59" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+            </div>
+            <div id="t6" class="miniGrid horizontalBorder">
+                <div class="row">
+                    <div id="t61" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t62" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t63" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t64" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t65" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t66" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t67" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t68" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t69" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="rowSpacer" />
+        <div class="row">
+            <div id="t7" class="miniGrid">
+                <div class="row">
+                    <div id="t71" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t72" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t73" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t74" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t75" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t76" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t77" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t78" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t79" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+            </div>
+            <div id="t8" class="miniGrid verticalBorder">
+                <div class="row">
+                    <div id="t81" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t82" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t83" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t84" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t85" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t86" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t87" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t88" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t89" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+            </div>
+            <div id="t9" class="miniGrid">
+                <div class="row">
+                    <div id="t91" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t92" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t93" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t94" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t95" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t96" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+                <div class="row">
+                    <div id="t97" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t98" class="tile" onclick="onTileClick(event)"></div>
+                    <div id="t99" class="tile" onclick="onTileClick(event)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
